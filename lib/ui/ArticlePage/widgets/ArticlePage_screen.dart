@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../data/models/article_model.dart';
+import 'package:wikipedia_reader/data/repository/RandomArticleRepository.dart';
 import '../view_models/article_view_model.dart';
 import 'article_page.dart';
-import '../../../summary.dart';
+import '../../../domain/models/summary.dart';
 
 class ArticleView extends StatefulWidget {
   ArticleView({super.key});
@@ -11,7 +11,7 @@ class ArticleView extends StatefulWidget {
 }
 
 class _ArticleViewState extends State<ArticleView> {
-  final viewModel = ArticleViewModel(ArticleModel());
+  final viewModel = ArticleViewModel(RandomArticleRepository());
 
   @override
   void initState() {
