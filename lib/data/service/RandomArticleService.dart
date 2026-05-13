@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:http/http.dart';
 
 class RandomArticleService {
   final Dio _dio = Dio();
